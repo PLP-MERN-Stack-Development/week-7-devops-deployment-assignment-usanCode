@@ -7,6 +7,8 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const helmet = require("helmet");
 const morgan = require("morgan");
+const mongoose = require('mongoose');
+
 
 
 
@@ -109,11 +111,28 @@ function getUsersInRoom(room) {
     .filter(([_, u]) => u.room === room)
     .map(([id, u]) => ({ socketId: id, username: u.username }));
 }
+//  Connect to MongoDB
+mongoose
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log('🟢 MongoDB connected');
 
+    server.listen(process.env.PORT || 5000, () => {
+      console.log(`Server running on port ${process.env.PORT || 5000}`);
+    });
+  })
+  .catch((err) => {
+    console.error('🔴 MongoDB connection error:', err);
+  });
+
+/*
 server.listen(process.env.PORT || 5000, () => {
   console.log(`Server running on port ${process.env.PORT || 5000}`);
 });
 
-
+*/
 
 
