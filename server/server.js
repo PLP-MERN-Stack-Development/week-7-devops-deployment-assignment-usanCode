@@ -5,11 +5,15 @@ const http = require('http');
 const { Server } = require('socket.io');
 const dotenv = require('dotenv');
 const cors = require('cors');
+const helmet = require("helmet");
+
+
 
 dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(helmet());
 
 // ✅ Add this route here
 app.get('/', (req, res) => {
