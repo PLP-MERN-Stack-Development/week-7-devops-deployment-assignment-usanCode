@@ -6,6 +6,7 @@ const { Server } = require('socket.io');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const helmet = require("helmet");
+const morgan = require("morgan");
 
 
 
@@ -27,6 +28,10 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Something broke!' });
 });
 
+// ✅ Use morgan for logging in production
+if (process.env.NODE_ENV === 'production') {
+  app.use(morgan('combined'));
+}
 
 const server = http.createServer(app);
 const io = new Server(server, {
