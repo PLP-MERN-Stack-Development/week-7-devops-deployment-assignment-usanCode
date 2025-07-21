@@ -1,3 +1,6 @@
+
+
+# .github/workflows/backend.yml
 name: Backend CI with pnpm
 
 on:
@@ -26,7 +29,7 @@ jobs:
           version: 8
 
       - name: 🟢 Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'pnpm'
@@ -34,4 +37,5 @@ jobs:
       - name: 📦 Install dependencies
         run: pnpm install
 
-     
+      - name: ⚙️ Run backend tests
+        run: pnpm test
