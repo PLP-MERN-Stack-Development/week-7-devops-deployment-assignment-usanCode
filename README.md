@@ -78,9 +78,9 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 - [Netlify Documentation](https://docs.netlify.com/) 
 
 
-For this assignment, I have used the week-5-web-socket-assignment in order to deploy it on Render (for the backend)and Vercel (for the frontend)
+For this assignment, I have used the week-5-web-socket-assignment in order to deploy it on Render (for the backend)and Vercel (for the frontend).
 
-[https://usanase-chat-app.vercel.app/](LIVE DEMO) 
+[LIVE DEMO](https://usanase-chat-app.vercel.app/) 
 
 
 ## 🚀 Features
