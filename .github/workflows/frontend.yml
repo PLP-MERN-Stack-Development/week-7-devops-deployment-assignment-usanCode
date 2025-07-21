@@ -26,7 +26,7 @@ jobs:
       - name: 🛠 Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8 # or any version you're using
+          version: 8
 
       - name: 🟢 Set up Node.js
         uses: actions/setup-node@v4
@@ -39,4 +39,5 @@ jobs:
 
       - name: ⚙️ Build frontend
         run: pnpm run build
+
 
