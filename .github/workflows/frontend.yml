@@ -1,0 +1,40 @@
+
+# .github/workflows/frontend.yml
+name: Frontend CI with pnpm
+
+on:
+  push:
+    paths:
+      - 'client/**'
+  pull_request:
+    paths:
+      - 'client/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./client
+
+    steps:
+      - name: ⬇️ Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🛠 Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8 # or any version you're using
+
+      - name: 🟢 Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: 📦 Install dependencies
+        run: pnpm install
+
+      - name: ⚙️ Build frontend
+        run: pnpm run build
