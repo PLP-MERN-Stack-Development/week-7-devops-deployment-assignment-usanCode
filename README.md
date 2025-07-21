@@ -76,3 +76,71 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 - [Railway Documentation](https://docs.railway.app/)
 - [Vercel Documentation](https://vercel.com/docs)
 - [Netlify Documentation](https://docs.netlify.com/) 
+
+
+For this assignment, I have used the week-5-web-socket-assignment in order to deploy it on Render (for the backend)and Vercel (for the frontend)
+
+(LIVE DEMO[https://usanase-chat-app.vercel.app/])
+
+## 🚀 Features
+
+I have to remind the application was built:
+-for the backend: Express, Mongodb,socket-io,cors,dotenv dependencies
+-for the backend: React/Vite,Axios,TailwindCSS , socket-io-client dependencies
+
+## 🛠️ Project Structure
+
+chatapp
+├── client/  
+└── server/
+|__.gitignore
+|__package.json
+|__README.md
+|__Week7-Assignment.md
+
+## Deploying the Backend on Render 
+
+(.) Created a new Web Service on Render
+
+(.) Connected to the GitHub repo.
+
+(.) Configured:
+
+    (.) Build Command: npm install
+
+    (.) Start Command: node server.js
+
+    (.) Environment variables (MONGO_URI, NODE_ENV, PORT)
+
+(.)Render generated a live backend URL 
+
+## Deploying the Frontend on Vercel
+
+(.) Created a project on Vercel
+
+(.) Connected to GitHub and selected the client/ folder.
+
+(.) Configured environment variables 
+
+(.) Vercel deployed the frontend with a live URL 
+
+## Testing the Live App
+
+(.) Opened the Vercel frontend URL.
+
+(.) Connected successfully to the Render backend.
+
+## Future Improvements
+
+(.) OAuth login with Google, GitHub, Facebook, Instagram
+
+(.) User authentication and sessions
+
+(.) Chat history and database persistence
+
+(.) UI/UX improvements
+
+# Special Thanks
+Thanks to ChatGPT for real-time guidance throughout setup, deployment, and debugging. 🙏
+
+
