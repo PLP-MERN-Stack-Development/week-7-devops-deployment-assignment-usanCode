@@ -80,7 +80,7 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 
 For this assignment, I have used the week-5-web-socket-assignment in order to deploy it on Render (for the backend)and Vercel (for the frontend)
 
-(LIVE DEMO[https://usanase-chat-app.vercel.app/])
+(LIVE DEMO)[https://usanase-chat-app.vercel.app/]
 
 ## 🚀 Features
 
@@ -106,7 +106,7 @@ chatapp
 
 + Configured:
 
-      - Build Command: npm install
+      - Build Command: pnpm add
 
       * Start Command: node server.js
 
