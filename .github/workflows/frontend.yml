@@ -1,4 +1,5 @@
 
+
 # .github/workflows/frontend.yml
 name: Frontend CI with pnpm
 
@@ -28,7 +29,7 @@ jobs:
           version: 8 # or any version you're using
 
       - name: 🟢 Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'pnpm'
@@ -38,3 +39,4 @@ jobs:
 
       - name: ⚙️ Build frontend
         run: pnpm run build
+
