@@ -100,45 +100,45 @@ chatapp
 
 ## Deploying the Backend on Render 
 
-(.) Created a new Web Service on Render
+- Created a new Web Service on Render
 
-(.) Connected to the GitHub repo.
+* Connected to the GitHub repo.
 
-(.) Configured:
++ Configured:
 
-    (.) Build Command: npm install
+      - Build Command: npm install
 
-    (.) Start Command: node server.js
+      * Start Command: node server.js
 
-    (.) Environment variables (MONGO_URI, NODE_ENV, PORT)
+      + Environment variables (MONGO_URI, NODE_ENV, PORT)
 
-(.)Render generated a live backend URL 
+- Render generated a live backend URL 
 
 ## Deploying the Frontend on Vercel
 
-(.) Created a project on Vercel
+  - Created a project on Vercel
 
-(.) Connected to GitHub and selected the client/ folder.
+  * Connected to GitHub and selected the client/ folder.
 
-(.) Configured environment variables 
+  + Configured environment variables 
 
-(.) Vercel deployed the frontend with a live URL 
+  - Vercel deployed the frontend with a live URL 
 
 ## Testing the Live App
 
-(.) Opened the Vercel frontend URL.
+  - Opened the Vercel frontend URL.
 
-(.) Connected successfully to the Render backend.
+  *  Connected successfully to the Render backend.
 
 ## Future Improvements
 
-(.) OAuth login with Google, GitHub, Facebook, Instagram
+  - OAuth login with Google, GitHub, Facebook, Instagram
 
-(.) User authentication and sessions
+  *  User authentication and sessions
 
-(.) Chat history and database persistence
+  + Chat history and database persistence
 
-(.) UI/UX improvements
+  - UI/UX improvements
 
 # Special Thanks
 Thanks to ChatGPT for real-time guidance throughout setup, deployment, and debugging. 🙏
