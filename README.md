@@ -91,12 +91,19 @@ I have to remind the application was built:
 ## 🛠️ Project Structure
 
 chatapp
+|__ .github/
+    |__ workflows/
+        |__ backend.yml
+        |__ frontend.yml
 ├── client/  
 └── server/
-|__.gitignore
-|__package.json
-|__README.md
-|__Week7-Assignment.md
+|__ .gitignore
+|__ package.json
+|__ README.md
+|__ Week7-Assignment.md
+
+
+
 
 ## Deploying the Backend on Render 
 
