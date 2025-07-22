@@ -10,10 +10,14 @@ For this assignment, I have used the week-5-web-socket-assignment in order to de
 ## 🚀 Features
 
 I have to remind the application was built:
--for the backend: Express, Mongodb,socket-io,cors,dotenv dependencies
--for the backend: React/Vite,Axios,TailwindCSS , socket-io-client dependencies
+
+- **for the backend:** Express, Mongodb,socket-io,cors,dotenv dependencies
+
+- **for the frontend:** React/Vite,Axios,TailwindCSS , socket-io-client dependencies
+
 
 ## 🛠️ Project Structure
+
 <pre><code>
 chatapp
 |__ .github/
@@ -26,6 +30,7 @@ chatapp
 |__ package.json
 |__ README.md
 |__ Week7-Assignment.md
+
 </code></pre>
 
 
